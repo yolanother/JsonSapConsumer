@@ -71,7 +71,7 @@ function JsonSap(providerAppName, channel) {
 		send(requestId, {}, errorCb);
 	}
 
-	this.init = function(successCb, errorCb, dataReceivedCb) {
+	this.connect = function(successCb, errorCb, dataReceivedCb) {
 	    if (this.mUnavailable == true) {
 	        console.log('connection failed previously');
 	        window.setTimeout(function() {
