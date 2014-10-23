@@ -30,6 +30,9 @@
  */
 
 function JsonSap(providerAppName, channel) {
+	var VERSION_NO = 3;
+	var VERSION = "0.0.3";
+
 	this.mSocket = null;
 	this.mPeerAgent = null;
 	this.mChannel = channel;
